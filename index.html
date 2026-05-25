@@ -163,9 +163,25 @@
           LowCode 기반의 AI융합 스마트관리시스템 개발 심화 과정 팀 프로젝트.<br>
           OutSystems와 Brity RPA를 활용해 동물원 시설 점검·보고서 자동화 시스템을 구축.
         </p>
-        <div class="project-img-placeholder">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="3" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="11" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M1 22l8-6 6 5 4-3 12 9" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-          <span>프로젝트 스크린샷 추가 — src="resources/project1.png"</span>
+        <div class="slider" id="slider-1">
+          <div class="slider-track">
+            <img class="slide" src="resources/project1_1.png" alt="동물원 프로젝트 화면 1">
+            <img class="slide" src="resources/project1_2.png" alt="동물원 프로젝트 화면 2">
+            <img class="slide" src="resources/project1_3.png" alt="동물원 프로젝트 화면 3">
+            <img class="slide" src="resources/project1_4.png" alt="동물원 프로젝트 화면 4">
+            <img class="slide" src="resources/project1_5.png" alt="동물원 프로젝트 화면 5">
+            <img class="slide" src="resources/project1_6.png" alt="동물원 프로젝트 화면 6">
+          </div>
+          <button class="slider-btn prev">&#8249;</button>
+          <button class="slider-btn next">&#8250;</button>
+          <div class="slider-dots" id="dots-slider-1">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
         <ul class="project-points">
           <li>오늘의 점검 목록 필터링 로직 및 상태 기반 UI 구현 (담당)</li>
@@ -202,9 +218,21 @@
           서울시 공공 상권 데이터를 기반으로 음식점 업종별 매출 흐름을 분석·시각화한 웹 서비스.<br>
           팀장으로 프로젝트를 총괄하며 Spring Boot 전체 백엔드와 Flask 연동 컨트롤러를 담당.
         </p>
-        <div class="project-img-placeholder">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="3" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="11" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M1 22l8-6 6 5 4-3 12 9" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-          <span>프로젝트 스크린샷 추가 — src="resources/project2.png"</span>
+        <div class="slider" id="slider-2">
+          <div class="slider-track">
+            <img class="slide" src="resources/project2_1.png" alt="서울시 상권 분석 화면 1">
+            <img class="slide" src="resources/project2_2.png" alt="서울시 상권 분석 화면 2">
+            <img class="slide" src="resources/project2_3.png" alt="서울시 상권 분석 화면 3">
+            <img class="slide" src="resources/project2_4.png" alt="서울시 상권 분석 화면 4">
+          </div>
+          <button class="slider-btn prev">&#8249;</button>
+          <button class="slider-btn next">&#8250;</button>
+          <div class="slider-dots" id="dots-slider-2">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
         <ul class="project-points">
           <li>Spring Boot REST API 전체 구현 및 Flask 분석 서버 연동 구조 설계</li>
@@ -240,9 +268,21 @@
           고객 / 점주 / 관리자 역할 기반의 주문 관리 웹 애플리케이션.<br>
           Spring Security 인증 구조와 MyBatis 기반 데이터 연동을 단독 설계·구현.
         </p>
-        <div class="project-img-placeholder">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="3" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="11" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M1 22l8-6 6 5 4-3 12 9" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-          <span>프로젝트 스크린샷 추가 — src="resources/project3.png"</span>
+        <div class="slider" id="slider-3">
+          <div class="slider-track">
+            <img class="slide" src="resources/project3_1.png" alt="주문 관리 화면 1">
+            <img class="slide" src="resources/project3_2.png" alt="주문 관리 화면 2">
+            <img class="slide" src="resources/project3_3.png" alt="주문 관리 화면 3">
+            <img class="slide" src="resources/project3_4.png" alt="주문 관리 화면 4">
+          </div>
+          <button class="slider-btn prev">&#8249;</button>
+          <button class="slider-btn next">&#8250;</button>
+          <div class="slider-dots" id="dots-slider-3">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
         <ul class="project-points">
           <li>Spring Security 기반 역할별 인증·인가 처리 구현</li>
@@ -368,22 +408,67 @@
 </footer>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+  // ── 슬라이더 ──
+  const sliderState = {};
+
+  function slideTo(id, index) {
+    const slider = document.getElementById(id);
+    const slides = slider.querySelectorAll('.slide');
+    const dots   = document.querySelectorAll('#dots-' + id + ' .dot');
+    if (sliderState[id] === undefined) sliderState[id] = 0;
+    sliderState[id] = (index + slides.length) % slides.length;
+    slider.querySelector('.slider-track').style.transform =
+      'translateX(-' + (sliderState[id] * 100) + '%)';
+    dots.forEach((d, i) => d.classList.toggle('active', i === sliderState[id]));
+  }
+
+  function slideMove(id, dir) {
+    if (sliderState[id] === undefined) sliderState[id] = 0;
+    slideTo(id, sliderState[id] + dir);
+  }
+
+  // DOM 로드 후 슬라이더 이벤트 등록
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.slider').forEach(function (slider) {
+      var id = slider.id;
+      slider.querySelector('.prev').addEventListener('click', function () {
+        slideMove(id, -1);
+      });
+      slider.querySelector('.next').addEventListener('click', function () {
+        slideMove(id, 1);
+      });
+      slider.querySelectorAll('.dot').forEach(function (dot, i) {
+        dot.addEventListener('click', function () {
+          slideTo(id, i);
+        });
+      });
+    });
+  });
+
+  // ── Scroll fade-up ──
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, i) {
       if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        setTimeout(function () {
+          entry.target.classList.add('visible');
+        }, i * 80);
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-up').forEach(function (el) {
+    observer.observe(el);
+  });
 
+  // ── Nav 활성화 ──
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
-    navLinks.forEach(a => {
+  window.addEventListener('scroll', function () {
+    var current = '';
+    sections.forEach(function (s) {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(function (a) {
       a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
     });
   });
